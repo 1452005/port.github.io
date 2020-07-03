@@ -45,7 +45,11 @@ layout: default
     var margin = {top: 10, right: 10, bottom: 10, left: 10},
         w = 400,
         h = 300;
-    var svg = d3.select("body").append("svg")
+    var div = d3.select("body").append("div")
+    		.attr('class','container')
+    		.attr('overflow-x','auto')
+    		.attr('overflow-y','auto'),
+    	svg = div.append("svg")
                 .attr("width", w)
                 .attr("height", h),
         g_chart = svg.append("g").attr("transform","translate(10,100)"),
