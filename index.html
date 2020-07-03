@@ -2,7 +2,8 @@
 layout: default
 ---
 <!DOCTYPE html>
-<head>
+
+<body style="overflow: scroll;height:auto;">
   <meta charset="utf-8">
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <style>
@@ -39,8 +40,6 @@ layout: default
       stroke: #ffffff;
     }
   </style>
-</head>
-<body style="overflow: scroll;height:1000px;">
   <script>
     var margin = {top: 10, right: 10, bottom: 10, left: 10},
         w = 400,
@@ -48,7 +47,7 @@ layout: default
     var div = d3.select("body").append("div")
     		.attr('class','container')
     		.style('overflow','scroll')
-    		.style('height','600px')
+    		.style('height','200px')
     	//	.attr('overflow-y','auto'),
     	svg = div.append("svg")
                 .attr("width", w)
